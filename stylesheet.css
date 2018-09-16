@@ -17,6 +17,16 @@ a {
   text-decoration: none;
 }
 
+.container{
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;;
+}
+
 .top-wrapper {
   background-image:url(imaiges/hanabi.jpg);
+}
+
+.top-wrapper h1{
+  opacity: 0.8;
 }
