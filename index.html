@@ -4,11 +4,18 @@
     <meta charset="utf-8">
     <title>mysite</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <header>
       <div class="container">
         <div class="header-title">SukiGazo</div>
+        <div class="header-list">
+          <ul>
+            <li>SukiGazoとは</li>
+            <li>ジャンル</li>
+            <li>お問い合わせ</li>
+          </ul>
       </div>
     </header>
     <div class="top-wrapper">
@@ -16,8 +23,34 @@
         <h1>あなたの好きな写真は何ですか？</h1>
       </div>
     </div>
-    <dic class="categories-wrapper">
-
+    <dic class="photo-wrapper">
+      <div class ="container">
+        <div class="section-title">
+          <h3>お気に入りの写真</h3>
+        </div>
+        <div id="photo-carousel">
+          <ol class="carousel-indicator">
+            <li data-target="#photo-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#photo-carousel" data-slide-to="1" class=""></li>
+            <li data-target="#photo-carousel" data-slide-to="2" class=""></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="photo photo-box active">
+              <img src="imaiges/torri.jpg">
+              <h4>海に浮かぶ鳥居</h4>
+            </div>
+            <div class="photo photo-box">
+              <img src="imaiges/cherry.jpg">
+              <h4>桜</h4>
+            </div>
+            <div class="photo photo-box">
+              <img src="imaiges/cats.jpg">
+              <h4>いたずらを教える猫</h4>
+            </div>
+          </div>
+        </div>
+        <p>あなたの感性に響くものはありましたか？</p>
+      </div>
     </div>
     <div class="contact-wrapper">
 
@@ -25,5 +58,6 @@
     <footer>
 
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

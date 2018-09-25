@@ -23,11 +23,25 @@ a {
   margin: 0 auto;;
 }
 
+.header-title{
+  font-size: 30px;
+  float: left;
+  padding: 20px;
+}
+
+.header-list li{
+  float:left;
+  padding: 36px 20px 10px 20px;
+}
+
 .top-wrapper {
   background-image:url(imaiges/hanabi.jpg);
+  padding: 180px 0 200px 0;
+  background-size: cover;
+  text-align: center;
 }
 
 .top-wrapper h1{
   opacity: 0.8;
-  color:white;
+  color:black;
 }
