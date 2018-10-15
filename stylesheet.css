@@ -111,12 +111,35 @@ header{
   color:#4e9caf
 }
 
-.photo{
+.slide{
   display:none;
 }
 
 .active{
   display:block;
+}
+
+.change-btn-wrapper{
+  width: 700px;
+  margin: 20px auto;
+  font-size: 18px;
+}
+
+.change-btn-wrapper:after{
+  content: "";
+  clear: both;
+  display:block;
+}
+
+.prev-btn{
+  cursor: pointer;
+  float:left;
+  display:none;
+}
+
+.next-btn{
+  cursor: pointer;
+  float: right;
 }
 
 .index-btn-wrapper{
@@ -141,7 +164,7 @@ header{
 }
 
 
-
+/*  ここからinterview  */
 #interview{
   margin-top:20px;
   text-align:center;
