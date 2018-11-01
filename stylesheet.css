@@ -1,15 +1,3 @@
-html, body,
-ul, ol, li,
- h2, h3, h4, h5, h6 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  font-weight: 400;
-}
-
-h4, h5{
-  color:#444;
-  font-size:18px;
-}
 
 body {
   font-family: 'Hiragino Kaku Gothic ProN W3', sans-serif;
@@ -25,10 +13,8 @@ a {
 
 .container{
   width: 1170px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left:auto; 
-  margin-right:auto;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 header{
@@ -164,9 +150,26 @@ header{
 }
 
 
-/*  ここからinterview  */
-#interview{
-  margin-top:20px;
-  text-align:center;
-  display:inline-block;
+/*ここからLikePhoto*/
+.like-Photo{
+  margin-top: 50px;
+}
+
+.like img{
+  height: 200px;
+  width: 250px;
+}
+
+.like{
+  float:left;
+  width: 25%;
+}
+
+.like p{
+  display: inline-box;
+  width: 80%;
+}
+
+.questionnaire-title{
+  margin-bottom: 50px;
 }
