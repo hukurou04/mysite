@@ -52,7 +52,7 @@ header{
 }
 
 .top-wrapper {
-  background-image:url(imaiges/hanabi.jpg);
+  background-image:url(hanabi.jpg);
   padding: 180px 0 200px 0;
   background-size: 330px;
   text-align: center;
@@ -75,7 +75,7 @@ header{
 
 .carousel-inner{
   background-color:rgba(0, 0, 0, 0.9);
-  
+
 }
 
 
@@ -83,7 +83,7 @@ header{
 .photo-box{
   display:block;
   height:25%;
-  
+
   position:center;
 }
 
