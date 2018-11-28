@@ -1,0 +1,241 @@
+html{
+  font-size: 62.5%;
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 1.4rem;
+}
+
+h1{
+  font-size: 2.4rem;
+}
+
+.container_item{
+  margin: 0 auto 0;
+}
+
+.landing-page-container{
+  width: 100%;
+  min-height: 100%;
+  height: 100vh;
+  background-image: url(rough.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  display: table;
+  font-family: "Montserrat",sans-serif;
+  color: #09383E;
+}
+
+.content-wrapper{
+  max-width: 1200px;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header{
+  width: 100%;
+  height: 2rem;/*remは初期値を基準に何倍なのかを表す*/
+  padding: 3rem 0;
+  display: block;
+}
+
+.menu-icon{
+  width: 2.5rem;
+  height: 1.5rem;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.header_item{
+  display: inline-block;
+  float: left;
+}
+
+.menu-icon_line{
+  width: 1.5rem;
+  height: .2rem;
+  background: #0C383E;
+  display: block;
+}
+
+.menu-icon_line::before, .menu-icon_line::after{
+  content:'';
+  width: 1.5rem;
+  height: .2rem;
+  background: #0C383E;
+  display: inline-block;
+  position: relative;
+}
+
+.menu-icon_line::before{
+  left: .5rem;
+  top: -0.6rem;
+}
+
+.menu-icon_line::after{
+  top: -1.8rem;
+}
+
+.heading{
+  width: 73%;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.7rem;
+  margin:0 20px;
+  text-align: center;
+}
+
+.social-container{
+  width: 7.25rem;
+  list-style: none;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  float: right;
+}
+
+.fab{
+  width: 1.5rem;
+  float: left;
+  cursor: pointer;
+}
+
+.fa-dribbble{
+  margin-left:5px;
+}
+.fa-instagram{
+  margin-left:10px;
+}
+.fa-facebook-f{
+
+}
+
+.coords{
+  font-size:1rem;
+  display: inline-block;
+  float: left;
+  position: relative;
+  top: 40%;
+  letter-spacing: .2rem;
+  left: -11.5rem;
+  margin: 0;
+  transform: rotate(-90deg) translateY(50%);
+}
+
+.ellipse-container{
+  width: 50rem;
+  height: 50rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  position:relative;
+  top: 7rem;
+}
+
+.ellipse-container .greeting{
+  position: relative;
+  top: 14rem;
+  right: 0;
+  margin: 0 auto;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 8rem;
+  font-weight: 400;
+  opacity: .5;
+  text-align: center;
+}
+
+.loader{
+  position: absolute;
+  top: 40%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 450px;
+  box-sizing: border-box;
+  /*background: #000;*/
+}
+
+.loader .face{
+  position: absolute;
+  border: 2px solid #121212;
+}
+
+.loader .face.face1{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /*background: #090909;*/
+  box-shadow: 0 0 10px rgba(127, 140, 141,.1);
+  border-radius: 50%;
+  border-right: 2px solid rgba(127, 140, 141,.5);
+  border-left: 2px solid rgba(127, 140, 141,.5);
+  animation: animate 4s linear infinite;
+}
+
+.loader .face.face2{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /*background: #090909;*/
+  border: none;
+  border-radius: 50%;
+  animation: animate 4s linear reverse infinite;
+}
+
+
+.loader .face .circle{
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 50%;
+  width: 50%;
+  height: 2px;
+  /*background: #fff;*/
+  transform-origin: left;
+}
+
+.loader .face.face1 .circle{
+  transform: rotate(0deg);
+}
+
+.loader .face.face2 .circle::before{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  top: -4px;
+  right: -6px;
+}
+
+.loader .face.face2 .circle::after{
+  content: '';
+  position: absolute;
+  /*background: #fff;*/
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  top: -15px;
+  right: -17px;
+}
+
+@keyframes animate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
