@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  position: relative;
+  width: 100%;
+}
+.container .section{
+  position: sticky;/*stickyはスクロールして指定の場所に来たらfixedになる。*/
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+}
+
+.container .section:nth-child(1){
+  background: url(california.jpg);
+  background-size: cover;
+}
+.container .section:nth-child(2){
+  background: url(italy.jpg);
+  background-size: cover;
+}
+.container .section:nth-child(3){
+  background: url(lake-irene.jpg);
+  background-size: cover;
+}
+.container .section:nth-child(4){
+  background: url(sea.jpg);
+  background-size: cover;
+}
+.container .section:nth-child(5){
+  background: url(norway.jpg);
+  background-size: cover;
+}
