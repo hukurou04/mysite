@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Move Background Image On Scroll</title>
+    <link rel="stylesheet" href="scroll.css">
+  </head>
+  <body>
+    <section></section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(window).scroll(function(){
+        var scroll_position = $(window).scrollTop()/3;
+        $('section').css({
+          'background-position-x': - scroll_position + 'px',
+        })
+      })
+    </script>
+  </body>
+</html>
