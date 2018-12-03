@@ -1,0 +1,39 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: #34495e;
+}
+
+.eyes{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.eye{
+  width: 240px;
+  height: 120px;
+  background: #fff;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+/*absoluteとrelativeの違いは、absoluteはウェブの左上を基準にして要素の移動を始めるが、relativeは要素が元いた場所を基準に移動を始める。relativeの場合、移動させた要素の後に、他の要素があっても、他の要素が余白を詰めたりはしない。absoluteは詰める。そして、relativeは、親要素に「position:relative」を入れると、その子要素の基準が親要素になる。
+わからなくなったら、https://uxmilk.jp/63409を見る。*/
+
+.ball{
+  width: 40px;
+  height: 40px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 15px solid #333;
+}
